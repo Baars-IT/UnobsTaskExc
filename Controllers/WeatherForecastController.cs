@@ -11,7 +11,7 @@ namespace UnobsTaskExc.Controllers
         [OutputCache]
         public IEnumerable<WeatherForecast> Get()
         {
-            throw new ArgumentException("The Unobserved Task Exception will occur at Garbage Collection");
+            throw new ArgumentException("Some exception");
         }
 
         [Route("/g-c", Name = "GarbageCollect")]
